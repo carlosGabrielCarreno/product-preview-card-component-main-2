@@ -17,7 +17,6 @@
 }
 
 body {
-  font-family: "Fraunces", serif;
   font-family: "Montserrat", sans-serif;
   background-color: var(--Cream);
   width: 100vw;
@@ -35,7 +34,20 @@ body {
   overflow: hidden;
 }
 
-.card__container-image {
+.card__container-info {
+  padding: 1rem 0 1rem 1rem;
+}
+
+.card__container-info h3 {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.card__container-info h1 {
+  font-family: "Fraunces", serif;
+  text-transform: capitalize;
+  font-size: 2rem;
 }
 
 .card__container-image img {
