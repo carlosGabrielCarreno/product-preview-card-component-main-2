@@ -38,6 +38,11 @@ body {
   padding: 1rem 0 1rem 1rem;
 }
 
+.card__container-info h3,
+.card__container-info .card__container-info--text {
+  color: var(--Dark-grayish-blue);
+}
+
 .card__container-info h3 {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -52,4 +57,49 @@ body {
 
 .card__container-image img {
   width: 100%;
+}
+
+.card__container-price {
+  display: flex;
+  /* border: solid; */
+  align-items: center;
+}
+
+.card__container-price--price-current {
+  color: var(--Dark-cyan);
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  margin-right: 1rem;
+}
+
+.card__container-price--old-price {
+  text-decoration: line-through;
+  color: var(--Dark-grayish-blue);
+}
+
+.card__container-btn-to-cart {
+  display: flex;
+  justify-content: center;
+}
+
+.card__container-btn-to-cart img {
+  margin-right: 0.5rem;
+}
+
+.card__container-btn-to-cart button {
+  width: 100%;
+  border: transparent;
+  padding: 10px 15px;
+  border-radius: 0.2rem;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card__container-btn-to-cart button:hover {
+  background-color: var(--Very-dark-blue);
 }
