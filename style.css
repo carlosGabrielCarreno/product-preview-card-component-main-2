@@ -19,7 +19,7 @@
 body {
   font-family: "Fraunces", serif;
   font-family: "Montserrat", sans-serif;
-  background-color: red;
+  background-color: var(--Cream);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -30,7 +30,12 @@ body {
 
 .card {
   width: 95%;
-  background-color: aqua;
+  background-color: var(--White);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card__container-image {
 }
 
 .card__container-image img {
