@@ -17,6 +17,7 @@
 }
 
 body {
+  transition: all 0.3s ease;
   font-family: "Montserrat", sans-serif;
   background-color: var(--Cream);
   width: 100vw;
@@ -34,12 +35,12 @@ body {
   background-color: var(--White);
   border-radius: 0.5rem;
   overflow: hidden;
-  border: solid;
+  /* border: solid; */
 }
 
 @media screen and (min-width: 810px) {
   .card {
-    border: solid red;
+    /* border: solid red; */
     display: flex;
     max-width: 754px;
   }
@@ -47,7 +48,7 @@ body {
 
 @media screen and (min-width: 1020px) {
   .card {
-    border: solid fuchsia;
+    /* border: solid fuchsia; */
     display: flex;
     max-width: 943px;
   }
@@ -55,6 +56,23 @@ body {
 
 .card__container-info {
   padding: 1rem;
+  /* border: solid greenyellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 0.4rem;
+}
+
+@media screen and (min-width: 810px) {
+  .card__container-info {
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: space-between;
+    width: 80%;
+  }
 }
 
 .card__container-info h3,
@@ -74,12 +92,18 @@ body {
   font-size: 2rem;
 }
 
-.card__container-image {
-  width: 100%;
-  height: 50%;
+@media screen and (min-width: 810px) {
+  .card__container-info h1 {
+    font-size: 2.5rem;
+  }
 }
 
-.card__container-image--image {
+.card__container-image {
+  width: 100%;
+  height: 45%;
+}
+
+.card__container-image--imageOne {
   background-image: url("./images/image-product-mobile.jpg");
   background-size: cover;
   background-position: center;
@@ -88,9 +112,26 @@ body {
   height: 100%;
 }
 
+.card__container-image--imageTwo {
+  display: none;
+}
+
 @media screen and (min-width: 810px) {
-  .card__container-image--image {
+  .card__container-image {
+    width: 100%;
+    height: 100%;
+  }
+  .card__container-image--imageOne {
+    display: none;
+  }
+  .card__container-image--imageTwo {
+    display: block;
     background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -107,9 +148,22 @@ body {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 810px) {
+  .card__container-price--price-current {
+    font-size: 2.5rem;
+    margin-right: 1.2rem;
+  }
+}
+
 .card__container-price--old-price {
   text-decoration: line-through;
   color: var(--Dark-grayish-blue);
+}
+
+@media screen and (min-width: 810px) {
+  .card__container-price--old-price {
+    font-size: 1.5rem;
+  }
 }
 
 .card__container-btn-to-cart {
@@ -137,4 +191,11 @@ body {
 
 .card__container-btn-to-cart button:hover {
   background-color: var(--Very-dark-blue);
+}
+
+@media screen and (min-width: 810px) {
+  .card__container-btn-to-cart button {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
 }
