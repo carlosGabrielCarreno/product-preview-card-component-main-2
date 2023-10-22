@@ -80,6 +80,12 @@ body {
   color: var(--Dark-grayish-blue);
 }
 
+@media screen and (min-width: 810px) {
+  .card__container-info--text {
+    font-size: 1.3rem;
+  }
+}
+
 .card__container-info h3 {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -90,11 +96,18 @@ body {
   font-family: "Fraunces", serif;
   text-transform: capitalize;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 810px) {
   .card__container-info h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .card__container-info h1 {
+    font-size: 2.8rem;
   }
 }
 
